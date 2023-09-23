@@ -2574,7 +2574,6 @@
     <Content Include="Public\vendors\themify-icons\Themify IconFonts 5-23-2014.json" />
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Areas\Admin\Views\Shared\_LayoutAdmin.cshtml" />
-    <Content Include="Areas\Admin\Views\Dashboard\Index.cshtml" />
     <Content Include="Public\dist\css\adminlte.css.map" />
     <Content Include="Public\dist\css\adminlte.min.css.map" />
     <Content Include="Public\dist\css\alt\adminlte.components.css.map" />
@@ -2653,6 +2652,7 @@
     <Content Include="Public\plugins\summernote\summernote.js.map" />
     <Content Include="Public\plugins\summernote\summernote.min.js.map" />
     <Content Include="Public\plugins\toastr\toastr.js.map" />
+    <Content Include="Areas\Admin\Views\Dashboard\Index.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
