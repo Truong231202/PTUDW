@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="QuangTruong" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="QuangTruongContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="NhanViens" EntityType="QuangTruong.NhanVien" />
+    <EntitySet Name="PhongBans" EntityType="QuangTruong.PhongBan" />
+    <AssociationSet Name="NhanVienPhongBan" Association="QuangTruong.NhanVienPhongBan">
+      <End Role="NhanVien" EntitySet="NhanViens" />
+      <End Role="PhongBan" EntitySet="PhongBans" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="NhanVien">
+    <Key>
+      <PropertyRef Name="maNhanVien" />
+    </Key>
+    <Property Name="maNhanVien" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tenNhanVien" Type="String" Nullable="false" />
+    <Property Name="ngaysinh" Type="String" Nullable="false" />
+    <Property Name="luong" Type="String" Nullable="false" />
+    <Property Name="hinhanh" Type="String" Nullable="false" />
+    <Property Name="maPhong" Type="String" Nullable="false" />
+    <NavigationProperty Name="PhongBans" Relationship="QuangTruong.NhanVienPhongBan" FromRole="NhanVien" ToRole="PhongBan" />
+  </EntityType>
+  <EntityType Name="PhongBan">
+    <Key>
+      <PropertyRef Name="maPhong" />
+    </Key>
+    <Property Name="maPhong" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tenPhong" Type="String" Nullable="false" />
+    <NavigationProperty Name="NhanVien" Relationship="QuangTruong.NhanVienPhongBan" FromRole="PhongBan" ToRole="NhanVien" />
+    <Property Name="NhanVien_maNhanVien" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="NhanVienPhongBan">
+    <End Type="QuangTruong.NhanVien" Role="NhanVien" Multiplicity="1" />
+    <End Type="QuangTruong.PhongBan" Role="PhongBan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="maNhanVien" />
+      </Principal>
+      <Dependent Role="PhongBan">
+        <PropertyRef Name="NhanVien_maNhanVien" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

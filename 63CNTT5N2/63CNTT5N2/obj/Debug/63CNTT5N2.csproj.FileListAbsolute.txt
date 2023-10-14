@@ -51,8 +51,11 @@ C:\Users\Quang Truong\Semester 4\PTUDW\PTUDW\63CNTT5N2\63CNTT5N2\bin\roslyn\vbc.
 C:\Users\Quang Truong\Semester 4\PTUDW\PTUDW\63CNTT5N2\63CNTT5N2\bin\roslyn\VBCSCompiler.exe
 C:\Users\Quang Truong\Semester 4\PTUDW\PTUDW\63CNTT5N2\63CNTT5N2\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\Quang Truong\Semester 4\PTUDW\PTUDW\63CNTT5N2\63CNTT5N2\bin\Antlr3.Runtime.dll
+C:\Users\Quang Truong\Semester 4\PTUDW\PTUDW\63CNTT5N2\63CNTT5N2\bin\EntityFramework.dll
+C:\Users\Quang Truong\Semester 4\PTUDW\PTUDW\63CNTT5N2\63CNTT5N2\bin\EntityFramework.SqlServer.dll
 C:\Users\Quang Truong\Semester 4\PTUDW\PTUDW\63CNTT5N2\63CNTT5N2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Quang Truong\Semester 4\PTUDW\PTUDW\63CNTT5N2\63CNTT5N2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Quang Truong\Semester 4\PTUDW\PTUDW\63CNTT5N2\63CNTT5N2\bin\MyClass.dll
 C:\Users\Quang Truong\Semester 4\PTUDW\PTUDW\63CNTT5N2\63CNTT5N2\bin\Newtonsoft.Json.dll
 C:\Users\Quang Truong\Semester 4\PTUDW\PTUDW\63CNTT5N2\63CNTT5N2\bin\System.Web.Helpers.dll
 C:\Users\Quang Truong\Semester 4\PTUDW\PTUDW\63CNTT5N2\63CNTT5N2\bin\System.Web.Mvc.dll
@@ -62,6 +65,10 @@ C:\Users\Quang Truong\Semester 4\PTUDW\PTUDW\63CNTT5N2\63CNTT5N2\bin\System.Web.
 C:\Users\Quang Truong\Semester 4\PTUDW\PTUDW\63CNTT5N2\63CNTT5N2\bin\System.Web.WebPages.dll
 C:\Users\Quang Truong\Semester 4\PTUDW\PTUDW\63CNTT5N2\63CNTT5N2\bin\System.Web.WebPages.Razor.dll
 C:\Users\Quang Truong\Semester 4\PTUDW\PTUDW\63CNTT5N2\63CNTT5N2\bin\WebGrease.dll
+C:\Users\Quang Truong\Semester 4\PTUDW\PTUDW\63CNTT5N2\63CNTT5N2\bin\MyClass.pdb
+C:\Users\Quang Truong\Semester 4\PTUDW\PTUDW\63CNTT5N2\63CNTT5N2\bin\MyClass.dll.config
+C:\Users\Quang Truong\Semester 4\PTUDW\PTUDW\63CNTT5N2\63CNTT5N2\bin\EntityFramework.xml
+C:\Users\Quang Truong\Semester 4\PTUDW\PTUDW\63CNTT5N2\63CNTT5N2\bin\EntityFramework.SqlServer.xml
 C:\Users\Quang Truong\Semester 4\PTUDW\PTUDW\63CNTT5N2\63CNTT5N2\bin\System.Web.Helpers.xml
 C:\Users\Quang Truong\Semester 4\PTUDW\PTUDW\63CNTT5N2\63CNTT5N2\bin\System.Web.Mvc.xml
 C:\Users\Quang Truong\Semester 4\PTUDW\PTUDW\63CNTT5N2\63CNTT5N2\bin\System.Web.Optimization.xml

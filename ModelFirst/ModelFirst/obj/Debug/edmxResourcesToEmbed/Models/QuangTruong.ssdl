@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QuangTruong.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="QuangTruongStoreContainer">
+    <EntitySet Name="NhanViens" EntityType="QuangTruong.Store.NhanViens" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PhongBans" EntityType="QuangTruong.Store.PhongBans" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="NhanVienPhongBan" Association="QuangTruong.Store.NhanVienPhongBan">
+      <End Role="NhanVien" EntitySet="NhanViens" />
+      <End Role="PhongBan" EntitySet="PhongBans" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="NhanViens">
+    <Key>
+      <PropertyRef Name="maNhanVien" />
+    </Key>
+    <Property Name="maNhanVien" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tenNhanVien" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ngaysinh" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="luong" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="hinhanh" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="maPhong" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PhongBans">
+    <Key>
+      <PropertyRef Name="maPhong" />
+    </Key>
+    <Property Name="maPhong" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tenPhong" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="NhanVien_maNhanVien" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="NhanVienPhongBan">
+    <End Role="NhanVien" Type="QuangTruong.Store.NhanViens" Multiplicity="1" />
+    <End Role="PhongBan" Type="QuangTruong.Store.PhongBans" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="maNhanVien" />
+      </Principal>
+      <Dependent Role="PhongBan">
+        <PropertyRef Name="NhanVien_maNhanVien" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

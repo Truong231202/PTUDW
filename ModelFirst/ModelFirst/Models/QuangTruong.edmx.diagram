@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3f9cf32acef6466f99c7017702d8357e" Name="Diagram1" >
+        <EntityTypeShape EntityType="QuangTruong.NhanVien" Width="1.5" PointX="5.5" PointY="0.625" />
+        <EntityTypeShape EntityType="QuangTruong.PhongBan" Width="1.5" PointX="8.375" PointY="1.125" />
+        <AssociationConnector Association="QuangTruong.NhanVienPhongBan" ManuallyRouted="true" >
+          <ConnectorPoint PointX="7" PointY="2.989889322916667" />
+          <ConnectorPoint PointX="7" PointY="10.912600193463648" />
+          <ConnectorPoint PointX="5.2499997820705175" PointY="10.912600193463648" />
+          <ConnectorPoint PointX="5.9374997820705175" PointY="30.039770720256048" />
+          <ConnectorPoint PointX="7.6875" PointY="30.039770720256048" />
+          <ConnectorPoint PointX="8.375" PointY="2.912985026041667" />
+        </AssociationConnector>
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

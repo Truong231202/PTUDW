@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QuangTruongStoreContainer" CdmEntityContainer="QuangTruongContainer">
+    <EntitySetMapping Name="NhanViens">
+      <EntityTypeMapping TypeName="IsTypeOf(QuangTruong.NhanVien)">
+        <MappingFragment StoreEntitySet="NhanViens">
+          <ScalarProperty Name="maNhanVien" ColumnName="maNhanVien" />
+          <ScalarProperty Name="tenNhanVien" ColumnName="tenNhanVien" />
+          <ScalarProperty Name="ngaysinh" ColumnName="ngaysinh" />
+          <ScalarProperty Name="luong" ColumnName="luong" />
+          <ScalarProperty Name="hinhanh" ColumnName="hinhanh" />
+          <ScalarProperty Name="maPhong" ColumnName="maPhong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PhongBans">
+      <EntityTypeMapping TypeName="IsTypeOf(QuangTruong.PhongBan)">
+        <MappingFragment StoreEntitySet="PhongBans">
+          <ScalarProperty Name="maPhong" ColumnName="maPhong" />
+          <ScalarProperty Name="tenPhong" ColumnName="tenPhong" />
+          <ScalarProperty Name="NhanVien_maNhanVien" ColumnName="NhanVien_maNhanVien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
